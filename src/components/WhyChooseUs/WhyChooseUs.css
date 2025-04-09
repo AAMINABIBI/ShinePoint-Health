@@ -1,0 +1,123 @@
+/* src/components/WhyChooseUs.css */
+.why-choose-us {
+  background-color: #f9f9f9; /* Light background */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.why-choose-us-content {
+  max-width: 1200px; /* Ensure content doesn't stretch too wide */
+  margin: 0 auto; /* Center content horizontally */
+}
+
+.section-title {
+  font-family: 'Bebas Neue', sans-serif; /* Assuming you have this font */
+  font-weight: 800;
+  font-size: 2.5em; /* Adjusted font size for responsiveness */
+  text-align: center;
+  color: #000000;
+  margin-bottom: 20px; /* Add some spacing below the title */
+}
+
+.section-title span {
+  color: #CD44EF; /* Purple accent */
+}
+
+.section-description {
+  font-family: 'Poppins', sans-serif; /* Assuming you have this font */
+  font-weight: 300;
+  font-size: 1em; /* Adjusted font size for responsiveness */
+  line-height: 1.5;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #666;
+  margin-bottom: 40px; /* Add spacing below the description */
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust minmax for smaller screens */
+  gap: 30px;
+  text-align: left;
+}
+
+.feature-item {
+  border: 1px solid #CD44EF;
+  padding: 20px;
+  margin-bottom: 20px; /* Add spacing between feature items */
+  display: flex; /* Use flexbox for better alignment */
+  flex-direction: column; /* Stack number, title, and text */
+  height: auto; /* Allow height to adjust based on content */
+}
+
+.feature-number {
+  font-size: 2em;
+  font-weight: bold;
+  color: #000000; /* Purple accent */
+  margin-bottom: 15px;
+  display: block;
+}
+
+.feature-title {
+  font-family: 'Bebas Neue', sans-serif; /* Assuming you have this font */
+  font-weight: 800;
+  font-size: 1.5em; /* Adjusted font size for responsiveness */
+  letter-spacing: 0%;
+  color: #CD44EF; /* Purple accent */
+  text-align: left;
+  margin-bottom: 10px; /* Add spacing below the title */
+}
+
+.feature-text {
+  font-family: 'Poppins', sans-serif; /* Assuming you have this font */
+  font-weight: 300;
+  font-size: 1em; /* Adjusted font size for responsiveness */
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Media Queries for Responsiveness */
+@media (min-width: 768px) {
+  .section-title {
+    font-size: 3em;
+  }
+
+  .section-description {
+    font-size: 1.1em;
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Adjust minmax for larger tablets */
+  }
+
+  .feature-item {
+    height: 200px; /* Maintain a consistent height on larger screens */
+    flex-direction: row; /* Arrange number and text horizontally */
+    align-items: flex-start; /* Align items to the top */
+  }
+
+  .feature-number {
+    margin-right: 20px;
+    margin-bottom: 0;
+    min-width: 40px; /* Ensure number takes up some space */
+    text-align: center; /* Center the number in its allocated space */
+  }
+
+  .feature-title {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-title {
+    font-size: 3.5em;
+  }
+
+  .section-description {
+    font-size: 1.2em;
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Adjust minmax for desktops */
+  }
+}

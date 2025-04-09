@@ -1,0 +1,119 @@
+/* src/components/UnlockMotivationSection.css */
+.unlock-motivation {
+  text-align: center;
+  padding: 40px 20px; /* Adjust padding for smaller screens */
+}
+
+.unlock-motivation-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.unlock-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 800;
+  font-size: 2.5em; /* Adjust font size for responsiveness */
+  line-height: 1.2;
+  margin-bottom: 30px; /* Adjust margin for smaller screens */
+}
+
+.unlock-title span {
+  color: #CD44EF;
+}
+
+.combined-row {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically on smaller screens */
+  justify-content: center;
+  align-items: center;
+  margin: 30px 20px; /* Adjust margin for smaller screens */
+}
+
+.phone-mockups {
+  display: flex;
+  justify-content: center;
+  margin-right: 0; /* Remove right margin on smaller screens */
+  margin-left: 0; /* Remove left margin on smaller screens */
+  margin-bottom: 30px; /* Add bottom margin to separate from text */
+}
+
+.phone-left,
+.phone-right {
+  width: 150px; /* Adjust phone width for smaller screens */
+  margin: 0 10px; /* Add some spacing between phones */
+}
+
+.phone-mockups img {
+  width: 100%;
+  height: auto;
+}
+
+.app-features {
+  text-align: left;
+  margin-left: 0; /* Remove left margin on smaller screens */
+}
+
+.app-features ul {
+  padding: 0;
+}
+
+.app-features li::marker {
+  color: #CD44EF; /* Replace with your desired color */
+  font-size: 1.2em; /* Adjust size if needed */
+}
+
+.app-features li {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.try-now-button {
+  background-color: white;
+  color: #CD44EF;
+  padding: 12px 25px; /* Adjust padding for smaller screens */
+  border: 1px solid #CD44EF;
+  border-radius: 5px;
+  font-size: 0.9em; /* Adjust font size for smaller screens */
+  cursor: pointer;
+  font-weight: 800;
+}
+
+/* Media query for larger screens (tablets and desktops) */
+@media (min-width: 768px) {
+  .combined-row {
+    flex-direction: row; /* Arrange elements horizontally on larger screens */
+    margin: 50px;
+  }
+
+  .phone-mockups {
+    margin-right: 50px;
+    margin-left: -80px;
+    margin-bottom: 0; /* Remove bottom margin */
+  }
+
+  .phone-left,
+  .phone-right {
+    width: 200px; /* Restore larger phone width */
+  }
+
+  .app-features {
+    margin-left: 100px;
+  }
+
+  .unlock-title {
+    font-size: 3em; /* Restore larger font size */
+  }
+
+  .try-now-button {
+    font-size: 1em; /* Restore larger font size */
+    padding: 15px 30px; /* Restore larger padding */
+  }
+}
+
+/* Media query for even larger desktops */
+@media (min-width: 1200px) {
+  .unlock-title {
+    font-size: 40px; /* Restore original font size for very large screens if needed */
+  }
+}

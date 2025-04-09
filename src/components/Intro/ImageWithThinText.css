@@ -1,0 +1,140 @@
+/* src/components/ImageWithThinText.css */
+.image-container {
+  position: relative;
+  display: block; /* Changed from inline-block to block for full width */
+}
+
+.image-container img {
+  display: block;
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+}
+
+.text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  padding: 20px; /* Add some padding around the text */
+  text-align: center; /* Center text within the overlay */
+}
+
+.hero {
+  display: flex;
+  flex-direction: column; /* Stack content vertically on smaller screens */
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+  width: 100%; /* Make hero take full width of overlay */
+}
+
+.hero-content {
+  margin-bottom: 40px; /* Space between heading and button */
+}
+
+.hero-heading h1 {
+  font-family: 'Bebas Neue', sans-serif; /* Assuming you have this font */
+  font-size: 3em; /* Adjusted font size for responsiveness */
+  color: #F5F5E4;
+  margin: 10px 0;
+  line-height: 1.2;
+}
+
+.hero-heading h1 span {
+  color: #CD44EF;
+}
+
+.hero-subtitle {
+  font-family: 'Poppins', sans-serif; /* Assuming you have this font */
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.5;
+  letter-spacing: 0%;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.app-button {
+  width: auto; /* Adjust width based on content */
+  padding: 15px 30px;
+  border: 1px solid #CD44EF;
+  border-radius: 10px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.5em;
+  letter-spacing: 0%;
+  color: #CD44EF;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  width: 100%; /* Make stats take full width of overlay */
+  padding: 20px;
+  flex-direction: row; /* Keep stats in a row on all screens */
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 2em;
+  font-weight: bold;
+  color: #CD44EF;
+}
+
+.stat-label {
+  display: block;
+  margin-top: 10px;
+  color: #ffffff;
+  font-size: 0.9em;
+}
+
+/* Media Queries for Responsiveness */
+@media (min-width: 768px) {
+  .hero {
+    flex-direction: row; /* Put content and image in a row on larger screens */
+    justify-content: center; /* Adjust as needed */
+    text-align: left;
+  }
+
+  .hero-content {
+    margin-right: 40px;
+    text-align: left;
+  }
+
+  .hero-heading h1 {
+    font-size: 4em;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2em;
+  }
+
+  .app-button {
+    padding: 15px 40px;
+    font-size: 1.8em;
+  }
+
+  .stats {
+    padding: 40px 20px;
+  }
+
+  .stat-label {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-heading h1 {
+    font-size: 5em;
+  }
+}
