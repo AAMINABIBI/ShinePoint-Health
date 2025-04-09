@@ -4,7 +4,7 @@ import './ImageWithThinText.css';
 function ImageWithThinText({ imageUrl, imageAlt }) {
   return (
     <div className="image-container">
-      <img src={imageUrl} alt={imageAlt} />
+      <img src={imageUrl} alt={imageAlt} className="full-width-image" />
       <div className="text-overlay">
         <section className="hero">
           <div className="hero-content">

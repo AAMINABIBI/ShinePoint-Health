@@ -40,7 +40,6 @@
 .phone-left,
 .phone-right {
   width: 150px; /* Adjust phone width for smaller screens */
-  margin: 0 10px; /* Add some spacing between phones */
 }
 
 .phone-mockups img {
