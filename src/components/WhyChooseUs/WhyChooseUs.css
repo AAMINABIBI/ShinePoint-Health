@@ -43,18 +43,18 @@
 
 .feature-item {
   border: 1px solid #CD44EF;
+  text-align: left;
   padding: 20px;
-  margin-bottom: 20px; /* Add spacing between feature items */
   display: flex; /* Use flexbox for better alignment */
   flex-direction: column; /* Stack number, title, and text */
   height: auto; /* Allow height to adjust based on content */
+  align-items: flex-start; /* Align items to the start (left) */
 }
 
 .feature-number {
   font-size: 2em;
   font-weight: bold;
   color: #000000; /* Purple accent */
-  margin-bottom: 15px;
   display: block;
 }
 
@@ -65,7 +65,6 @@
   letter-spacing: 0%;
   color: #CD44EF; /* Purple accent */
   text-align: left;
-  margin-bottom: 10px; /* Add spacing below the title */
 }
 
 .feature-text {
@@ -73,7 +72,6 @@
   font-weight: 300;
   font-size: 1em; /* Adjusted font size for responsiveness */
   color: #666;
-  line-height: 1.6;
 }
 
 /* Media Queries for Responsiveness */
@@ -84,23 +82,26 @@
 
   .section-description {
     font-size: 1.1em;
+    text-align: left; /* Keep left alignment on larger screens */
   }
 
   .features-grid {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Adjust minmax for larger tablets */
+    text-align: left; /* Keep left alignment */
   }
 
   .feature-item {
-    height: 200px; /* Maintain a consistent height on larger screens */
-    flex-direction: row; /* Arrange number and text horizontally */
-    align-items: flex-start; /* Align items to the top */
+    height: auto; /* Allow auto height on larger screens as well */
+    flex-direction: column; /* Ensure vertical stacking */
+    align-items: flex-start; /* Keep left alignment */
+    text-align: left;
   }
 
   .feature-number {
-    margin-right: 20px;
-    margin-bottom: 0;
-    min-width: 40px; /* Ensure number takes up some space */
-    text-align: center; /* Center the number in its allocated space */
+    margin-right: 0; /* Remove right margin */
+    margin-bottom: 15px; /* Keep bottom margin */
+    display: block; /* Ensure it's a block-level element */
+    text-align: left; /* Align number to the left */
   }
 
   .feature-title {
@@ -115,9 +116,15 @@
 
   .section-description {
     font-size: 1.2em;
+    text-align: left;
   }
 
   .features-grid {
+    text-align: left;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Adjust minmax for desktops */
+  }
+
+  .feature-item {
+    align-items: flex-start; /* Keep left alignment */
   }
 }

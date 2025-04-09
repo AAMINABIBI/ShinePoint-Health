@@ -15,7 +15,6 @@ function LevelUpHealth() {
             <p className="package">6 Week Package</p>
             <ul className="features">
               <li>Unlimited Gym Access</li>
-              <li>6 Week Package</li>
               <li>12 - 18 Training Sessions</li>
               <li>Mobile App Access</li>
             </ul>
@@ -30,7 +29,7 @@ function LevelUpHealth() {
             <ul className="features">
               <li>2 XLEVEL Assessments</li>
               <li>24 - 36 Training Sessions</li>
-              <li>2 Dietitian Consultation</li>
+              <li>2 Dietitian Consultations</li>
               <li>6 Group Classes</li>
               <li>Mobile App Access</li>
             </ul>
@@ -44,7 +43,7 @@ function LevelUpHealth() {
             <ul className="features">
               <li>4 XLEVEL Assessments</li>
               <li>48 - 72 Training Sessions</li>
-              <li>3 Dietitian Consultation</li>
+              <li>3 Dietitian Consultations</li>
               <li>Unlimited Group Classes</li>
               <li>Mobile App Access</li>
             </ul>

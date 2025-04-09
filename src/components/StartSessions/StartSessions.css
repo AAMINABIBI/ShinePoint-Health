@@ -1,133 +1,138 @@
-/* src/components/StartSessions.css */
 .start-sessions-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #f7f7f7; /* Light background */
-    padding: 40px;
-    font-family: sans-serif;
-  }
-  
-  .image-container {
-    flex: 1;
-    max-width: 50%;
-    padding-right: 40px;
-  }
-  
-  .image-container img {
-    display: block;
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
-  
-  .content-container {
-    flex: 1;
-    max-width: 50%;
-    padding-left: 40px;
-  }
-  
-  .title {
-    font-size: 2.5em;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 20px;
-    line-height: 1.2;
-  }
-  
-  .highlight {
-    color: #CD44EF; /* Your brand color */
-  }
-  
-  .description {
-    color: #666;
-    margin-bottom: 30px;
-    line-height: 1.6;
-  }
-  
-  .form {
-    display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to bottom, #f7f7f7, #e6e6e6); /* Smooth gradient background */
+  padding: 40px;
+  gap: 40px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.image-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Add a gradient and texture styling to align with the reference */
+.content-container {
+  flex: 1;
+  max-width: 60%;
+  text-align: left;
+  background: linear-gradient(to right, #f8f8f8, #ffffff); /* Subtle gradient effect */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for a professional look */
+}
+
+
+.image-container {
+  flex: 1;
+  max-width: 40%;
+}
+
+
+.title {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.highlight {
+  color: #CD44EF; /* Brand accent color */
+}
+
+.description {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-group {
+  display: flex;
+  gap: 20px;
+}
+
+.form input[type="text"],
+.form input[type="tel"],
+.form input[type="email"] {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.input-group input {
+  width: 50%;
+}
+
+.button {
+  background-color: #CD44EF;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #a835c0;
+}
+
+/* Responsive Design */
+@media (max-width: 960px) {
+  .start-sessions-container {
     flex-direction: column;
-    gap: 15px;
+    text-align: center;
+    gap: 30px;
   }
-  
+
+  .image-container {
+    max-width: 80%;
+    margin-bottom: 30px;
+  }
+
+  .content-container {
+    max-width: 90%;
+  }
+
   .input-group {
-    display: flex;
-    gap: 15px;
+    flex-direction: column;
   }
-  
+
+  .input-group input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 2em;
+  }
+
+  .description {
+    font-size: 0.9em;
+  }
+
   .form input[type="text"],
   .form input[type="tel"],
-  .form input[type="email"] {
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1em;
-    width: 100%;
-    box-sizing: border-box;
-  }
-  
-  .form .input-group input {
-    width: 50%;
-  }
-  
+  .form input[type="email"],
   .button {
-    background-color: #CD44EF; /* Your brand color */
-    color: white;
-    padding: 15px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.1em;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    font-size: 0.95em;
+    padding: 10px 15px;
   }
-  
-  .button:hover {
-    background-color: #a835c0; /* Darker shade on hover */
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 960px) {
-    .start-sessions-container {
-      flex-direction: column;
-      text-align: center;
-      padding: 30px;
-    }
-  
-    .image-container {
-      max-width: 80%;
-      padding-right: 0;
-      margin-bottom: 30px;
-    }
-  
-    .content-container {
-      max-width: 80%;
-      padding-left: 0;
-    }
-  
-    .input-group {
-      flex-direction: column;
-    }
-  
-    .form .input-group input {
-      width: 100%;
-    }
-  }
-  
-  @media (max-width: 600px) {
-    .title {
-      font-size: 2em;
-    }
-  
-    .description {
-      font-size: 0.9em;
-    }
-  
-    .form input[type="text"],
-    .form input[type="tel"],
-    .form input[type="email"],
-    .button {
-      font-size: 0.95em;
-      padding: 10px 15px;
-    }
-  }
+}

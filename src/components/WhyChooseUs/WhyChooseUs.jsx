@@ -15,6 +15,7 @@ function WhyChooseUs() {
           <div className="feature-item">
             <span className="feature-number">01</span>
             <h3 className="feature-title">PROFESSIONAL GUIDANCE</h3>
+            
             <p className="feature-text">
               Receive professional support from a board certified health and
               wellness coach.

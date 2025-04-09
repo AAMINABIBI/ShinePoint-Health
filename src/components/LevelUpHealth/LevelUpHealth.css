@@ -1,4 +1,3 @@
-/* src/components/LevelUpHealth.css */
 .level-up-container {
   padding: 40px 20px;
   text-align: center;
@@ -13,34 +12,31 @@
 .title {
   font-family: 'Bebas Neue', sans-serif;
   font-weight: 800;
-  font-size: 2.5em;
+  font-size: 2.5rem;
   line-height: 1.2;
   letter-spacing: 0%;
-  text-align: center;
   margin-bottom: 30px;
 }
 
 .title span {
   color: #CD44EF;
 }
-
 .offer-cards {
   display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
+  justify-content: center; /* Center-align cards */
+  gap: 10px; /* Reduce spacing between cards */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
 .offer-card {
   background-color: white;
   border-radius: 10px;
   padding: 25px;
-  /* Attempt to fit three on wider screens */
-  width: calc(33.33% - 40px);
+  width: calc(33.33% - 15px); /* Three cards in a row with minimal spacing */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: left;
   position: relative;
-  min-width: 250px; /* Reduced min-width slightly */
+  min-width: 250px;
 }
 
 .best-offer {
@@ -57,12 +53,12 @@
   color: #CD44EF;
   padding: 5px 10px;
   border-radius: 5px;
-  font-size: 0.8em;
+  font-size: 0.8rem;
   font-weight: bold;
 }
 
 .level-title {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-weight: bold;
   color: #333;
   margin-bottom: 10px;
@@ -73,7 +69,7 @@
 }
 
 .price {
-  font-size: 2em;
+  font-size: 2rem;
   font-weight: bold;
   color: #CD44EF;
   margin-bottom: 10px;
@@ -84,7 +80,7 @@
 }
 
 .package {
-  font-size: 0.9em;
+  font-size: 0.9rem;
   color: #666;
   margin-bottom: 15px;
 }
@@ -96,15 +92,13 @@
 .features {
   list-style: none;
   padding: 0;
-  text-align: left;
 }
 
 .features li {
-  font-size: 0.9em;
+  font-size: 0.9rem;
   color: #333;
-  margin-bottom: 8px;
-  position: relative;
   padding-left: 20px;
+  margin-bottom: 8px;
 }
 
 .best-offer .features li {
@@ -115,8 +109,8 @@
   content: '✓';
   color: green;
   position: absolute;
-  left: 0;
-  top: 0;
+  left:0;
+  padding-left: 10px;
 }
 
 .register-button {
@@ -125,29 +119,19 @@
   padding: 12px 25px;
   border: none;
   border-radius: 5px;
-  font-size: 0.9em;
   cursor: pointer;
-  margin-top: 15px;
   width: 100%;
-  text-align: center;
+  margin-top: 15px;
 }
 
 .best-offer .register-button {
   background-color: white;
   color: #CD44EF;
 }
-
-/* Media Queries for Responsiveness - More Aggressive for Laptop */
-@media (max-width: 1200px) { /* Target typical laptop widths */
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
   .offer-card {
-    width: calc(50% - 30px); /* Force two side-by-side on many laptops */
-  }
-}
-
-@media (max-width: 900px) { /* Further reduce width for smaller laptops/tablets */
-  .offer-card {
-    width: calc(70% - 20px); /* Take up more width, potentially one per row */
-    min-width: auto; /* Allow more flexibility */
+    width: calc(50% - 10px); /* Two cards per row for medium screens */
   }
 }
 
@@ -156,33 +140,8 @@
     flex-direction: column;
     align-items: center;
   }
-  .offer-card {
-    width: 90%;
-  }
-}
 
-@media (max-width: 576px) {
-  .title {
-    font-size: 2em;
-  }
   .offer-card {
-    padding: 20px;
-  }
-  .level-title {
-    font-size: 1.3em;
-  }
-  .price {
-    font-size: 1.8em;
-  }
-  .package {
-    font-size: 0.8em;
-  }
-  .features li {
-    font-size: 0.8em;
-    padding-left: 18px;
-  }
-  .register-button {
-    font-size: 0.8em;
-    padding: 10px 20px;
+    width: 90%; /* Single card per row on smaller screens */
   }
 }

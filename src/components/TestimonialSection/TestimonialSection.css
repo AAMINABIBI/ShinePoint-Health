@@ -1,13 +1,13 @@
 /* src/components/TestimonialSection.css */
 .testimonial-section {
-  background: linear-gradient(180deg, #f0f0f5 0%, #ffffff 100%); /* Light grayish background */
   padding: 80px 20px; /* Increased padding top and bottom */
   font-family: sans-serif;
+  text-align: center;
 }
 
 .section-content {
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
   max-width: 1200px;
   margin: 0 auto;
   background-color: #CD44EF;
