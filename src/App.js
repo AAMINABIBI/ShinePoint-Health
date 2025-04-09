@@ -9,6 +9,7 @@ import OurServicesSection from './components/OurServicesSection/OurServicesSecti
 import LevelUpHealth from './components/LevelUpHealth/LevelUpHealth';
 import TestimonialSection from './components/TestimonialSection/TestimonialSection';
 import StartSessions from './components/StartSessions/StartSessions';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
       <LevelUpHealth />
       <TestimonialSection/>
       <StartSessions/>
+      <Footer/>
+
+      
       <main>
         {/* Your page content goes here */}
       </main>
