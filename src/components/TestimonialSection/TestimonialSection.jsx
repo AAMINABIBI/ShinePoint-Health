@@ -6,7 +6,11 @@ import user from '../Assets/user.jpeg'; // Replace with actual path
 function TestimonialSection() {
   return (
     <div className="testimonial-section">
+       <h1 className="title">
+         WHAT OUR <br />  <span>CLIENT </span> <br></br>SAY ABOUT US
+        </h1>
       <div className="section-content">
+        
         <div className="left-content">
           <h2 className="left-title">What Our Member <br /> Say About Us?</h2>
           <div className="customer-images">
@@ -15,8 +19,10 @@ function TestimonialSection() {
           <p className="customer-count">10K+ Satisfied Customer</p>
         </div>
         <div className="right-content">
-          <h1 className="main-title">WHAT OUR CLIENT <br /> SAY ABOUT US</h1>
           <div className="testimonial-card">
+          <div className="rating">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
             <p className="testimonial-quote">"Join this fitness member, the best choice that I've. They're very professional and give you suggestion about what food and nutrition that you can eat"</p>
             <div className="author-info">
               <img src={user} alt="Jonathan Edward" className="author-image" />
@@ -25,11 +31,8 @@ function TestimonialSection() {
                 <p className="author-title">Office Worker</p>
               </div>
             </div>
-            <div className="rating">
-              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-            </div>
-          </div>
-          <div className="navigation">
+           
+            <div className="navigation">
             <div className="dots">
               <span className="dot active"></span>
               <span className="dot"></span>
@@ -37,6 +40,8 @@ function TestimonialSection() {
             </div>
             <button className="next-button">→</button>
           </div>
+          </div>
+       
         </div>
       </div>
     </div>

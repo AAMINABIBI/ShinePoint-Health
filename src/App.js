@@ -8,6 +8,7 @@ import CombinedSection from './components/UnlockMotivationSection/UnlockMotivati
 import OurServicesSection from './components/OurServicesSection/OurServicesSection';
 import LevelUpHealth from './components/LevelUpHealth/LevelUpHealth';
 import TestimonialSection from './components/TestimonialSection/TestimonialSection';
+import StartSessions from './components/StartSessions/StartSessions';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
 
       <LevelUpHealth />
       <TestimonialSection/>
+      <StartSessions/>
       <main>
         {/* Your page content goes here */}
       </main>

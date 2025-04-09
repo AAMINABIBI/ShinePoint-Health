@@ -10,6 +10,7 @@
   justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
+  background-color: #CD44EF;
 }
 
 .left-content {
@@ -20,49 +21,46 @@
 .left-title {
   font-size: 2.2em; /* Slightly larger title */
   font-weight: bold;
-  color: #333;
+  color: #f3f1f1;
   margin-bottom: 30px; /* Increased margin */
   line-height: 1.3;
+  padding: 50px
 }
 
 .customer-images {
   display: flex;
-  margin-bottom: 15px; /* Increased margin */
+  margin: 15px; /* Increased margin */
+  padding-left:40px
 }
 
 .customer-image {
-  width: 50px; /* Slightly larger images */
+  width: 150px; /* Slightly larger images */
   height: 50px; /* Slightly larger images */
-  border-radius: 50%;
-  margin-right: 15px; /* Increased margin */
+   border-radius: 20%; 
+  /* margin-right: 15px;  */
   object-fit: cover;
-  border: 2px solid #ddd; /* Added a light border */
+  border: 2px solid #CD44EF; /* Added a light border */
 }
 
 .customer-count {
   font-size: 1.1em;
-  color: #666;
+  color: #f7f7f7;
+  padding-left:40px
 }
 
 .right-content {
   width: 55%; /* Increased width for right content */
   text-align: left;
-  padding-left: 40px; /* Added padding to separate from left */
+  padding: 40px; /* Added padding to separate from left */
 }
 
-.main-title {
-  font-size: 3em; /* Larger main title */
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 40px; /* Increased margin */
-  line-height: 1.2;
-}
+
 
 .testimonial-card {
   background-color: #fff; /* White background for the card */
   border-radius: 10px;
   padding: 40px; /* Increased padding */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05); /* Subtle box shadow */
+  box-shadow: 0 8px 16px #0000000d; /* Subtle box shadow */
   border: 1px solid #eee; /* Light border */
 }
 
@@ -106,7 +104,8 @@
 
 .rating {
   color: gold;
-  font-size: 1.3em;
+  font-size: 1.6em;
+  text-align: right;
 }
 
 .navigation {
@@ -130,7 +129,7 @@
 }
 
 .dot.active {
-  background-color: #333;
+  background-color: #CD44EF;
 }
 
 .next-button {
