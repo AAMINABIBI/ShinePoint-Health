@@ -1,13 +1,15 @@
 /* src/components/ImageWithThinText.css */
 .image-container {
   position: relative;
-  display: block; /* Changed from inline-block to block for full width */
+  display: block;
+  width: 100%; 
 }
 
-.image-container img {
+.full-width-image {
   display: block;
   width: 100%;
-  height: auto; /* Maintain aspect ratio */
+  height: auto;
+  object-fit: cover; 
 }
 
 .text-overlay {
@@ -20,30 +22,33 @@
   display: flex;
   flex-direction: column;
   justify-content: center; /* Center content vertically */
-  align-items: center; /* Center content horizontally */
-  padding: 20px; /* Add some padding around the text */
-  text-align: center; /* Center text within the overlay */
+  align-items: flex-start; /* Align content to the left */
+  padding: 20px 50px;
+  text-align: left;
+  box-sizing: border-box; /* Include padding in width and height */
 }
 
 .hero {
   display: flex;
-  flex-direction: column; /* Stack content vertically on smaller screens */
-  align-items: center;
-  text-align: center;
-  padding: 40px 20px;
-  width: 100%; /* Make hero take full width of overlay */
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  padding: 40px 0;
+  width: 100%;
+  max-width: 600px;
+  box-sizing: border-box; /* Include padding and border in width and height */
 }
 
 .hero-content {
-  margin-bottom: 40px; /* Space between heading and button */
+  margin-bottom: 40px;
 }
 
 .hero-heading h1 {
-  font-family: 'Bebas Neue', sans-serif; /* Assuming you have this font */
-  font-size: 3em; /* Adjusted font size for responsiveness */
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3.5em;
   color: #F5F5E4;
   margin: 10px 0;
-  line-height: 1.2;
+  line-height: 1.1;
 }
 
 .hero-heading h1 span {
@@ -51,90 +56,92 @@
 }
 
 .hero-subtitle {
-  font-family: 'Poppins', sans-serif; /* Assuming you have this font */
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  font-size: 1em;
-  line-height: 1.5;
+  font-size: 1.1em;
+  line-height: 1.6;
   letter-spacing: 0%;
   color: #ffffff;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .app-button {
-  width: auto; /* Adjust width based on content */
-  padding: 15px 30px;
+  width: auto;
+  padding: 15px 35px;
   border: 1px solid #CD44EF;
   border-radius: 10px;
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 1.5em;
+  font-size: 1.8em;
   letter-spacing: 0%;
   color: #CD44EF;
   background-color: transparent;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.app-button:hover {
+  background-color: rgba(205, 68, 239, 0.2);
 }
 
 .stats {
   display: flex;
-  justify-content: space-around;
-  width: 100%; /* Make stats take full width of overlay */
-  padding: 20px;
-  flex-direction: row; /* Keep stats in a row on all screens */
+  gap: 40px;
+  width: 100%;
+  padding: 20px 0;
+  flex-direction: row;
+  justify-content: flex-start;
+  box-sizing: border-box; /* Include padding and border in width and height */
 }
 
 .stat-item {
-  text-align: center;
+  text-align: left;
 }
 
 .stat-number {
-  font-size: 2em;
+  font-size: 2.5em;
   font-weight: bold;
   color: #CD44EF;
+  line-height: 1;
 }
 
 .stat-label {
   display: block;
   margin-top: 10px;
   color: #ffffff;
-  font-size: 0.9em;
+  font-size: 1em;
 }
 
 /* Media Queries for Responsiveness */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
+  .text-overlay {
+    padding: 20px; /* Reduce padding on smaller screens */
+    align-items: center; /* Center text on smaller screens */
+    text-align: center;
+    justify-content: flex-start; /* Align items from the top */
+  }
+
   .hero {
-    flex-direction: row; /* Put content and image in a row on larger screens */
-    justify-content: center; /* Adjust as needed */
-    text-align: left;
-  }
-
-  .hero-content {
-    margin-right: 40px;
-    text-align: left;
-  }
-
-  .hero-heading h1 {
-    font-size: 4em;
-  }
-
-  .hero-subtitle {
-    font-size: 1.2em;
-  }
-
-  .app-button {
-    padding: 15px 40px;
-    font-size: 1.8em;
+    align-items: center; /* Center hero content */
+    text-align: center;
+    padding-top: 60px; /* Add some top padding */
+    max-width: 90%; /* Take more width */
+    margin: 0 auto; /* Center the hero block */
   }
 
   .stats {
-    padding: 40px 20px;
-  }
-
-  .stat-label {
-    font-size: 1em;
+    flex-direction: column; /* Stack stats on smaller screens */
+    align-items: center; /* Center stats */
+    gap: 20px;
+    padding: 20px;
   }
 }
 
-@media (min-width: 1024px) {
-  .hero-heading h1 {
-    font-size: 5em;
+@media (min-width: 769px) and (max-width: 1024px) {
+  .text-overlay {
+    padding: 20px 60px; /* Adjust padding for medium screens */
+  }
+
+  .hero {
+    max-width: 70%; /* Adjust width for medium screens */
   }
 }
