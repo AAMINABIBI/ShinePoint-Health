@@ -1,5 +1,5 @@
 import React from 'react';
-import './LevelUpHealth.css'; // Import your CSS file
+import './LevelUpHealth.css';
 
 function LevelUpHealth() {
   return (
@@ -11,7 +11,7 @@ function LevelUpHealth() {
         <div className="offer-cards">
           <div className="offer-card">
             <h2 className="level-title">LEVEL 1</h2>
-            <p className="price">$25</p>
+            <p className="price price-dashed">$25</p>
             <p className="package">6 Week Package</p>
             <ul className="features">
               <li>Unlimited Gym Access</li>
@@ -24,7 +24,7 @@ function LevelUpHealth() {
           <div className="offer-card best-offer">
             <div className="best-offer-label">Best Offer</div>
             <h2 className="level-title">LEVEL 2</h2>
-            <p className="price">$55</p>
+            <p className="price price-dashed">$55</p>
             <p className="package">3 Month Package</p>
             <ul className="features">
               <li>2 XLEVEL Assessments</li>
@@ -38,7 +38,7 @@ function LevelUpHealth() {
 
           <div className="offer-card">
             <h2 className="level-title">LEVEL 3</h2>
-            <p className="price">$75</p>
+            <p className="price price-dashed">$75</p>
             <p className="package">6 Month Package</p>
             <ul className="features">
               <li>4 XLEVEL Assessments</li>

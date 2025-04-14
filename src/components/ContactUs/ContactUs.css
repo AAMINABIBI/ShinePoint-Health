@@ -1,0 +1,276 @@
+.contact-us-container {
+    padding: 60px 20px;
+  }
+  
+  .contact-us-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 40px; /* Add spacing between the content and the map */
+  }
+  
+  .contact-us-form {
+    flex: 1;
+  }
+  
+  .contact-us-heading {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  
+  .contact-us-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #f7f7f7;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    line-height: 1.2;
+  }
+  
+  .form-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form-input {
+    padding: 12px 15px;
+    border: none;
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-size: 1rem;
+    color: #faf8f8;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-input::placeholder {
+    color: #999;
+  }
+  
+  .send-button {
+    background-color: #CD44EF;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    font-family: sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .send-button:hover {
+    background-color: #b03ed1;
+  }
+  
+  .arrow {
+    font-size: 1.2rem;
+  }
+  
+  .contact-us-image {
+    flex: 1;
+  }
+  
+  .contact-us-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .location-map {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 400px; /* Fixed height for the map */
+  }
+  
+  .location-map iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .contact-us-content {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .contact-us-form,
+    .contact-us-image {
+      flex: none;
+      width: 100%;
+    }
+  
+    .contact-us-title {
+      font-size: 2rem;
+    }
+  
+    .location-map {
+      height: 300px; /* Adjust height for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contact-us-title {
+      font-size: 1.8rem;
+    }
+  
+    .form-input {
+      padding: 10px;
+      font-size: 0.9rem;
+    }
+  
+    .send-button {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+    }
+  
+    .location-map {
+      height: 250px; /* Further adjust for very small screens */
+    }
+  }
+
+
+  .full-width-container {
+    position: relative;
+    width: 100vw; /* Full-width */
+    height: auto;
+  }
+  
+  .image {
+    width: 100vw; /* Full-width image */
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .overlay-dark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Ensures visibility of text */
+  }
+  
+  .text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers content horizontally */
+    justify-content: center; /* Centers content vertically */
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 1.2rem; /* Adjusted for better scaling */
+    text-align: center; /* Centers text */
+  }
+  
+  .hero-content h1 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 2rem; /* Dynamic font size */
+  }
+  
+  .hero-content .highlight-text {
+    color: #CD44EF;
+  }
+  
+  .hero-content p {
+    font-size: 1rem; /* Scales properly on smaller screens */
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .button {
+    padding: 15px 25px; /* Scaled for touch devices */
+    border: 1px solid #CD44EF;
+    border-radius: 8px;
+    background: transparent;
+    color: #CD44EF;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .button:hover {
+    background: rgba(205, 68, 239, 0.1);
+  }
+  
+  .stats {
+    display: flex;
+    flex-wrap: wrap; /* Enables wrapping on smaller screens */
+    justify-content: center; /* Center statistics horizontally */
+    gap: 20px; /* Adjusted for better spacing */
+    margin-top: 30px;
+  }
+  
+  .stat-item {
+    text-align: center; /* Centers text */
+    flex-basis: 45%; /* Makes stats responsive */
+  }
+  
+  .stat-number {
+    font-size: 1.5rem; /* Scales dynamically */
+    font-weight: bold;
+    color: #CD44EF;
+  }
+  
+  .stat-label {
+    margin-top: 10px;
+    font-size: 0.9rem; /* Adjusted size */
+    color: #f5f3f5;
+  }
+  
+  /* Media Queries for Better Responsiveness */
+  @media (min-width: 768px) {
+    .text-overlay {
+      font-size: 1.5rem; /* Larger text for bigger screens */
+      text-align: left; /* Align text to the left on larger screens */
+      padding: 40px; /* More padding for spacing */
+    }
+  
+    .hero-content h1 {
+      font-size: 2.5rem;
+    }
+  
+    .stats {
+      gap: 40px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .text-overlay {
+      font-size: 2rem;
+    }
+  
+    .hero-content h1 {
+      font-size: 3rem; /* Larger font for bigger screens */
+    }
+  
+    .stat-item {
+      flex-basis: 20%; /* Displays stats in a row */
+    }
+  
+    .stats {
+      gap: 60px; /* More spacing for larger screens */
+    }
+  }
+  

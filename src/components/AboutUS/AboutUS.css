@@ -1,0 +1,48 @@
+.resources-container {
+    position: relative;
+    height: 16rem;
+    background-image: url('../Assets//FrontServices.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .resources-container::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(168, 85, 247, 0.7), rgba(147, 51, 234, 0.7));
+    opacity: 0.7;
+  }
+  
+  .content-wrapper {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    color: white;
+  }
+  
+  .breadcrumb {
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
+  }
+  
+  .breadcrumb-link {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .breadcrumb-link:hover {
+    text-decoration: underline;
+  }
+  
+  .breadcrumb-separator {
+    margin: 0 0.5rem;
+  }
+  
+  .heading {
+    font-size: 2.25rem;
+    font-weight: 700;
+  }

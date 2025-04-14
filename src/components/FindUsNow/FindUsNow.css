@@ -1,0 +1,122 @@
+.find-us-now-container {
+    padding: 60px 20px;
+    background-color: #fff5e6; /* Light beige background as in the image */
+  }
+  
+  .find-us-now-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .find-us-now-heading {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  
+  .find-us-now-subheading {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+  }
+  
+  .find-us-now-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .find-us-now-card {
+    position: relative;
+    width: 33.33%;
+    height: 400px; /* Fixed height to match the image */
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  
+  .card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, #CD44EF 50%); /* Purple gradient overlay */
+    padding: 20px;
+    text-align: center;
+    color: white;
+    height: 50%; /* Cover the bottom half of the card */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card-icon {
+    background-color: black;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    position: relative;
+    top: -30px; /* Move icon up to overlap the image */
+  }
+  
+  .card-icon span {
+    font-size: 1.5rem;
+    color: white;
+  }
+  
+  .card-title {
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+  
+  .card-subtitle {
+    font-family: sans-serif;
+    font-size: 0.9rem;
+    color: #e0e0e0;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .find-us-now-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .find-us-now-card {
+      width: 90%;
+      height: 300px; /* Adjust height for smaller screens */
+    }
+  
+    .find-us-now-subheading {
+      font-size: 2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .find-us-now-subheading {
+      font-size: 1.8rem;
+    }
+  
+    .card-title {
+      font-size: 1rem;
+    }
+  
+    .card-subtitle {
+      font-size: 0.8rem;
+    }
+  }

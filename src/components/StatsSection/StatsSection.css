@@ -1,0 +1,80 @@
+.stats-section {
+    padding: 0;
+    background-color: #fff5e6; /* Light beige background as in the image */
+  }
+  
+  .stats-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .stats-banner {
+    background: linear-gradient(90deg, #CD44EF, #8B5CF6); /* Purple gradient */
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 15px 15px 0 0; /* Rounded top corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .stat-item {
+    text-align: center;
+    color: white;
+  }
+  
+  .stat-number {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #fff5e6;
+  }
+  
+  .stat-label {
+    font-family: sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+  
+  .stats-image {
+    width: 80%;
+    border-radius: 0 0 15px 15px; /* Rounded bottom corners */
+    overflow: hidden;
+    text-align: center;
+    margin: auto;
+  }
+  
+  .stats-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .stats-banner {
+      flex-direction: column;
+      gap: 20px;
+      padding: 20px;
+    }
+  
+    .stat-number {
+      font-size: 2rem;
+    }
+  
+    .stat-label {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .stat-number {
+      font-size: 1.8rem;
+    }
+  
+    .stat-label {
+      font-size: 0.8rem;
+    }
+  }
